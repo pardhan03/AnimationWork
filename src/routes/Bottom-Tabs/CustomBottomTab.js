@@ -4,7 +4,6 @@ import { useLinkBuilder } from '@react-navigation/native';
 import BottomTabIcon from './BottomTabIcon'
 import Animated, { useAnimatedStyle, withSpring } from 'react-native-reanimated';
 const CustomBottomTab = ({ state, descriptors, navigation }) => {
-    // console.log(state, descriptors, 'these props are coming from the tabbar props of the tab navigator');
     const { buildHref } = useLinkBuilder();
     const { width } = useWindowDimensions();
     const MARGIN =20;
@@ -58,7 +57,7 @@ const CustomBottomTab = ({ state, descriptors, navigation }) => {
                     >
                         <View style={styles.contentContainer}>
                             <BottomTabIcon name={route?.name} isFocused={isFocused}/>
-                            <Text style={{ color: isFocused ? "#0067ff" : "#ffff", fontSize: 12 }}>
+                            <Text style={{ color: isFocused ? "#0067ff" : "#ffff", fontSize: 8 }}>
                             {route.name}
                         </Text>
                         </View>
@@ -75,7 +74,7 @@ const styles = StyleSheet.create({
     tabBarContainer: {
         flex: 1,
         flexDirection: 'row',
-        height: 90,
+        height: 60,
         position: 'absolute',
         bottom: 20,
         alignSelf: 'center',
@@ -93,8 +92,8 @@ const styles = StyleSheet.create({
         gap: 4
     },
     slidingTab: {
-        width: 70,
-        height: 70,
+        width: 50,
+        height: 50,
         borderRadius: 100,
         backgroundColor: '#ffff',
     },

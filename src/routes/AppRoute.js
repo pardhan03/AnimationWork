@@ -11,40 +11,6 @@ import Search from "../screens/Search";
 import Setting from "../screens/Setting";
 import CustomBottomTab from "./Bottom-Tabs/CustomBottomTab"
 
-// export const screenNames = {
-//   'Home': HomeScreen,
-//   'Tickets': Tickets,
-//   'Wallet': Wallet,
-//   'Profile': Profile,
-// }
-
-//   let List = [
-//     {
-//       screen_name: 'Home',
-//       image: img.HomeInActiveTabIcon,
-//       title: 'Home',
-//       id: 1
-//     },
-//     {
-//       screen_name: 'Tickets',
-//       image: img.TicketInActiveTabIcon,
-//       title: 'Tickets',
-//       id: 2
-//     },
-//     {
-//       screen_name: 'Wallet',
-//       image: img.WalletInActiveTabIcon,
-//       title: 'Wallet',
-//       id: 3
-//     },
-//     {
-//       screen_name: 'Profile',
-//       image: img.ProfileInActiveTabIcon,
-//       title: 'Profile',
-//       id: 4
-//     },
-//   ];
-
 const BottomTabs = () => {
   return (
     <Tab.Navigator

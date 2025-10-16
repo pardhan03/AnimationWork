@@ -3,11 +3,9 @@ import React from 'react'
 import Svg, { Path } from 'react-native-svg'
 
 const BottomTabIcon = ({ name, isFocused }) => {
-    console.log(name, 'thisis the name of the route');
-
     const renderIcon = (routeName) => {
-        const width = 34;
-        const height = 34;
+        const width = 24;
+        const height = 24;
 
         switch (routeName) {
             case 'Home':
