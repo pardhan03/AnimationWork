@@ -1,6 +1,7 @@
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { NavigationContainer } from "@react-navigation/native";
+import { SafeAreaView } from "react-native-safe-area-context";
 
 const Stack = createNativeStackNavigator();
 const Tab = createBottomTabNavigator();
@@ -16,6 +17,9 @@ const BottomTabs = () => {
     <Tab.Navigator
       initialRouteName="Home"
       tabBar={(props) => <CustomBottomTab {...props} />}
+      screenOptions={{
+        headerShown: false
+      }}
     >
       <Tab.Screen name="Home" component={Home}/>
       <Tab.Screen name="Profile" component={Profile}/>
@@ -40,8 +44,10 @@ const HomeStack = () => {
 
 export default function AppRoutes() {
   return (
+    <SafeAreaView style={{ flex: 1 }}>
       <NavigationContainer>
           <HomeStack/>
       </NavigationContainer>
+    </SafeAreaView>
   );
 }

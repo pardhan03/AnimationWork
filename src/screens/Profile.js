@@ -1,10 +1,11 @@
 import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
+import VerticalList from '../component/Animated/AnimatedVerticalList/VerticalList'
 
 const Profile = () => {
   return (
     <View>
-      <Text>Profile</Text>
+      <VerticalList/>
     </View>
   )
 }

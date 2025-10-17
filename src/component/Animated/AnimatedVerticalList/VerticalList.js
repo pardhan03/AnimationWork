@@ -28,7 +28,7 @@ const VerticalList = () => {
                 scale: interpolate(
                 scrollY?.value,
                 [index -1, index , index+1],
-                [0.90, 1, 0.90]
+                [0.50, 1, 0.50]
             )
             }]
         }
@@ -68,7 +68,7 @@ const VerticalList = () => {
         data={mockData}
         renderItem={({ item, index }) => (
             <AnimatedCard
-                key={item?.id}
+                key={`item?.id`}
                 item={item}
                 index={index}
                 scrollY={scrollY}
