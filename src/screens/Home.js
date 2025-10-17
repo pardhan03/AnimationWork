@@ -17,6 +17,7 @@ const Home = () => {
       </View>
         <FlatList
         data={mockPlaces}
+        key={(item, index) => index.toString()}
         keyExtractor={(item, index) => index.toString()}
         renderItem={({ item, index }) => <Renderitem index={index} item={item}/>}
         showsVerticalScrollIndicator={false}
