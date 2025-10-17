@@ -56,7 +56,6 @@ export default RenderItem
 const styles = StyleSheet.create({
   container: {
     flexDirection: 'row',
-    marginTop: 20,
     backgroundColor: '#fff',
     padding: 12,
     marginHorizontal: 16,

@@ -15,7 +15,7 @@ const Home = () => {
           Popular Destinations
         </Animated.Text>
       </View>
-      <FlatList
+        <FlatList
         data={mockPlaces}
         keyExtractor={(item, index) => index.toString()}
         renderItem={({ item, index }) => <Renderitem index={index} item={item}/>}
@@ -41,5 +41,6 @@ const styles = StyleSheet.create({
     alignSelf: 'center'
   },
   scrollContainer: {
+    gap: 10
   }
 })

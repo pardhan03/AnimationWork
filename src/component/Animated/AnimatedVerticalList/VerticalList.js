@@ -127,8 +127,7 @@ const styles = StyleSheet.create({
         color: "#ddd",
     },
     contentContainer: {
-        paddingHorizontal: _spacing * 3,
-        paddingVertical: (height - _itemFullSize) / 2,
-        gap: _spacing * 2,
+        paddingHorizontal: _spacing * 1,
+        paddingVertical: (height - _itemFullSize) / 4,
     },
 })
